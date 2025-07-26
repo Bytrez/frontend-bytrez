@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #9D37F2; 
+  --background-color-darkest: #121212;
+  --background-color-dark: #151515;
+  --background-color-medium: #1a1a1a;
+  --background-color-light: #212121;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #c0c0c0;
+  --text-muted: #a0a0a0;
+
+  --border-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; 
+  background-color: var(--background-color-darkest);
+  color: var(--text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}

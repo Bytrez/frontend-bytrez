@@ -1,4 +1,3 @@
-import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import './Team.css';
 import SpotlightBackground from './SpotlightBackground';
@@ -36,7 +35,7 @@ function Team() {
               data-aos-delay={100 * (index + 2)}
             >
               <div className="team-card">
-                <img src={member.image} alt={`Foto de ${member.name}`} className="team-member-photo" />
+                <img src={member.image} alt={`Foto de ${member.name}`} className="team-member-photo" loading='lazy'/>
                 <div className="card-info">
                   <h3>{member.name}</h3>
                   <h4 className="member-role">{member.role}</h4>

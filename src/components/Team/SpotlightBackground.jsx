@@ -13,7 +13,6 @@ function SpotlightBackground() {
       canvas.height = canvas.parentElement.offsetHeight;
     };
     
-    // Configurações para os Spotlights
     const spotlights = [
       { x: canvas.width * 0.2, y: canvas.height * 0.3, radius: 200, dx: 0.3, dy: -0.2, color: 'rgba(217, 35, 35, 0.05)' },
       { x: canvas.width * 0.8, y: canvas.height * 0.7, radius: 300, dx: -0.2, dy: 0.3, color: 'rgba(217, 35, 35, 0.04)' },
@@ -35,7 +34,6 @@ function SpotlightBackground() {
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Desenha e move a poeira cósmica
       dustParticles.forEach(p => {
         p.x += p.dx;
         p.y += p.dy;
@@ -50,7 +48,6 @@ function SpotlightBackground() {
         ctx.fill();
       });
       
-      // Desenha e move os spotlights
       spotlights.forEach(light => {
         light.x += light.dx;
         light.y += light.dy;

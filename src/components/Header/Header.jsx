@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Header.css';
-import { Color } from 'three';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -21,8 +21,10 @@ body {
   font-family: 'Inter', sans-serif; 
   background-color: var(--background-color-darkest);
   color: var(--text-primary);
+  overflow-x: hidden; /* Previna scroll lateral */
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Previna scroll lateral */
 }

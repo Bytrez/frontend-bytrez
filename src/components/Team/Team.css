@@ -37,6 +37,8 @@
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  flex-shrink: 1;
+  width: 100%;
 }
 .parallax-effect-glare-scale {
   width: 350px;
@@ -134,5 +136,6 @@
 @media (max-width: 400px) {
   .parallax-effect-glare-scale {
     width: 100%;
+    min-width: 0;
   }
 }

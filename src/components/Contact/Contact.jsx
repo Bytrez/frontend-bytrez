@@ -36,7 +36,7 @@ function Contact() {
             <div className="info-card">
               <h3>Informações de Contato</h3>
               <ul>
-                <li><FaEnvelope className="info-icon" /><div><span>Email</span><a href="mailto:contato@bytrez.dev">contato@bytrez.dev</a></div></li>
+                <li><FaEnvelope className="info-icon" /><div><span>Email</span><a href="mailto:contato@bytrez.com">contato@bytrez.com</a></div></li>
                 <li><FaWhatsapp className="info-icon" /><div><span>WhatsApp</span><a href="https://wa.me/5547984860598" target="_blank" rel="noopener noreferrer">+55 (47) 98486-0598</a></div></li>
               </ul>
             </div>

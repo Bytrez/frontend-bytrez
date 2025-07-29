@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import Header from './components/Header/Header.jsx';
-import Hero from './components/Hero/Hero.jsx';
-import About from './components/About/About.jsx';
-import Services from './components/Services/Services.jsx';
-import Team from './components/Team/Team.jsx';
-import Contact from './components/Contact/Contact.jsx'; 
-import Footer from './components/Footer/Footer.jsx';
+const Hero = React.lazy(() => import('./components/Hero/Hero.jsx'));
+const About = React.lazy(() => import('./components/About/About.jsx'));
+const Services = React.lazy(() => import('./components/Services/Services.jsx'));
+const Team = React.lazy(() => import('./components/Team/Team.jsx'));
+const Contact = React.lazy(() => import('./components/Contact/Contact.jsx'));
+const Footer = React.lazy(() => import('./components/Footer/Footer.jsx'));
+import Loader from './components/Loader/Loader.jsx';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,13 +21,17 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Services />
-        <Team />
-        <Contact /> 
+        <Suspense fallback={<Loader />}>
+          <Hero />
+          <About />
+          <Services />
+          <Team />
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </>
   );
 }

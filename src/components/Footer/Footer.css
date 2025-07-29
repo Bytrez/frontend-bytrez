@@ -1,16 +1,17 @@
-
 .footer-container {
   background-color: #1a1a1a;
   color: #a0a0a0;
   padding: 80px 50px 30px;
   border-top: 1px solid #333;
 }
+
 .footer-content {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .footer-about {
